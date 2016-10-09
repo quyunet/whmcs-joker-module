@@ -62,8 +62,15 @@ function joker_login($params) {
 
 function joker_getConfigArray() {
 	$configarray = array(
-	 //"ote_url" => array( "Type" => "text", "Size" => "50", "Description" => "ote url", ),
-	 //"real_url" => array( "Type" => "text", "Size" => "50", "Description" => "正式url", ),
+	"FriendlyName" => array(
+	"Type" =>      "System",
+	"Value" =>     "Joker.com v 1.0"
+	),
+
+	"Description" => array(
+	"Type" => "System",
+	"Value" => "Created by <a href=\"http://www.quyu.net\" target=\"_blank\">QuYu.net</a>. For more information visit our <a href=\"https://github.com/quyunet\" target=\"_blank\">Open source</a>"
+	),
 	 "ote" => array( "Type" => "yesno", "Description" => "Whether the test environment", ),
 	 'user' => array( "Type" => "text", "Size" => "30", "Description" => "Username", ),
 	 'pass' => array( "Type" => "password", "Size" => "30", "Description" => "Password", ),
